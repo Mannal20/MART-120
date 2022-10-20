@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Alexandria Mann Contact Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:coral;
+                font-size: medium;
+            }
+            h1{
+                color:mediumorchid
+            }
+            a{
+                color:hotpink
+            }
+        </style>   
+        <script>
+            function SubmitForm()
+            {
+                window.alert("As Soon as I hit submit, it is immediately followed by ERR_FILE_NOT_FOUND. Have no clue how to fix this and the internet is not helping. So if it works for you, great. If it does not, I apologize. Figured out the button thing though.")
+                var FirstName = document.getElementById("fName").value;
+                if(FirstName == " ")
+                {
+                    document.getElementById("fName").focus();
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fNameMessage").innerHTML = "*Required";
+                    document.getElementById("fNameMessage").style.color = "red";
+                    return false;
+                }
+                var LastName = document.getElementById("lName").value;
+                if(LastName == " ")
+                {
+                    document.getElementById("lName").focus();
+                    document.getElementById("lName").style.backgroundColor = "red";
+                    document.getElementById("lNameMessage").innerHTML = "*Required";
+                    document.getElementById("lNameMessage").style.color = "red";
+                    return false;
+                }
+                var Email = document.getElementById("email").value;
+                if(Email == " ")
+                {
+                    document.getElementById("email").focus();
+                    document.getElementById("email").style.backgroundColor = "red";
+                    document.getElementById("emailMessage").innerHTML = "*Required";
+                    document.getElementById("emailMessage").style.color = "red";
+                    return false;
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        <h1><span style="background-color:gold; font-size: larger;">Contact Me</span></h1>
+        <p>
+            Please fill out this information if you wish to contact me:
+        </p>
+            <form action="nextPage.html" type="Post">
+                First Name: <input type=""text" id="fName">
+                <br>
+                Last Name: <input type="text" id="lName">
+                <br>
+                Email: <input type="text" id="email">
+                <br>
+                Accept Terms of Agreement: I will be a fantastic person today!
+            <br />
+            <input type="radio" name="Accept" value="Accept" required="Required">Accept Terms
+            <br>
+            <button id="btnSubmit" class="btn btn-primary" onclick='SubmitForm();'>Submit</button>
+        </form>
+        <br />
+        <a href="file:///C:/Users/husky/Documents/01%20University%20Items/Fall%202022/Creative%20Coding%201/Homework%207/Mann_HTMLPage_Homepage.html">Homepage</a>
+        <br />
+        <a href="file:///C:/Users/husky/Documents/01%20University%20Items/Fall%202022/Creative%20Coding%201/Homework%207/Mann_HTMLPage_StoryPage.html">Story Page</a>
+    </body>
+</html>
