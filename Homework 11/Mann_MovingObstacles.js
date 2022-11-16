@@ -75,7 +75,8 @@ function setup() {
 
     //Mouse Circle
     fill("green");
-    circle(mouseShapeX, mouseShapeY, 30);
+    circle(mouseShapeX, mouseShapeY, 20);
+    mouseClicked();
 
     function mouseClicked()
 {
